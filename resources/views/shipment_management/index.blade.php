@@ -65,7 +65,7 @@
         </form>
         <!-- ページネーション -->
         <div class="mt-5">
-            {{ $items->appends(request()->input())->links() }}
+            {{ $orders->appends(request()->input())->links() }}
         </div>
     </div>
 </x-app-layout>
