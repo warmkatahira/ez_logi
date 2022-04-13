@@ -14,4 +14,10 @@ class Item extends Model
     public $incrementing = false;
     // Laravel 6.0+以降なら指定
     protected $keyType = 'string';
+
+    Public function stock()
+    {
+        // stockモデルのデータを引っ張てくる
+        return $this->hasOne('App\Models\Stock', 'item_code');
+    }
 }

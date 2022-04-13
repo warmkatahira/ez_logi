@@ -29,6 +29,7 @@
                         <span>{{ $paginator->total() }}件中</span>
                         <span>{{ $paginator->firstItem() }}～</span>
                         <span>{{ $paginator->lastItem() }}件目を表示</span>
+                        <span>現在のページ：{{ $paginator->currentPage() }}</span>
                     @else
                         {{ $paginator->count() }}
                     @endif

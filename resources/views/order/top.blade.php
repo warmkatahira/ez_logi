@@ -1,12 +1,13 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <span class="font-semibold text-lg text-gray-800">
+            <i class="las la-shopping-cart la-lg align-middle"></i>
             受注
-        </h2>
+        </span>
     </x-slot>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid grid-cols-5 gap-4">
                 <a href="{{ route('order.data_import.index') }}" class="border-2 border-teal-400 rounded-lg font-bold text-teal-400 p-8 text-center transition duration-300 ease-in-out hover:bg-teal-400 hover:text-white mr-6">
                     受注データ取込
                 </a>

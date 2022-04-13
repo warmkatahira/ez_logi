@@ -10,6 +10,7 @@ use App\Models\OrderBtobImport;
 use App\Models\OrderBtocImport;
 use App\Models\Order;
 use App\Models\OrderDetail;
+use App\Consts\ShipmentStatusConst;
 
 
 class OrderController extends Controller
@@ -128,7 +129,7 @@ class OrderController extends Controller
                     'shipment_category' => $shipment_category,
                     'mall_category' => 'bakugai',
                     'order_category' => '初回',
-                    'shipment_status_code' => 'new_order',
+                    'shipment_status_code' => ShipmentStatusConst::RECEPTION_CODE,
                     'mall_name' => 'カラコン卸サイトbakugai',
                     'shipment_method' => '佐川急便',
                 ];

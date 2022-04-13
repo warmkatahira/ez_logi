@@ -15,6 +15,7 @@ mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/order.js', 'public/js')
     .js('resources/js/data_import.js', 'public/js')
     .js('resources/js/shipment_management.js', 'public/js')
+    .js('resources/js/item.js', 'public/js')
     .autoload({
         jquery: ['$', 'window.jQuery']
     })

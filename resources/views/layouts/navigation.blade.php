@@ -11,11 +11,23 @@
                 </div>
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('shipment_mgt.index',['shipment_status_code' => 'new_order'])" :active="request()->routeIs('shipment_mgt.index')">
-                        出荷管理
+                    <x-nav-link :href="route('shipment_mgt.index',['shipment_status_code' => 'reception'])" :active="request()->routeIs('shipment_mgt.index')">
+                        <span class="align-middle text-lg">
+                            <i class="las la-truck la-lg align-middle"></i>
+                            出荷管理
+                        </span>
                     </x-nav-link>
                     <x-nav-link :href="route('order.top')" :active="request()->routeIs('order.top')">
-                        受注
+                        <span class="align-middle text-lg">
+                            <i class="las la-shopping-cart la-lg align-middle"></i>
+                            受注
+                        </span>
+                    </x-nav-link>
+                    <x-nav-link :href="route('item.top')" :active="request()->routeIs('item.top')">
+                        <span class="align-middle text-lg">
+                            <i class="las la-tshirt la-lg align-middle"></i>
+                            商品
+                        </span>
                     </x-nav-link>
                 </div>
             </div>
